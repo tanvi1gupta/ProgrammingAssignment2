@@ -1,7 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix takes a numeric as an argument, 
+##1. set the matrix using  $set
+##2. get the matrix using $get
+##3. get the inverse of the matrix using $getsolve
+##4. set the inverse of the matrix using $setsolve
 
 makeCacheMatrix <-function(x = numeric())
 {
@@ -19,7 +23,8 @@ makeCacheMatrix <-function(x = numeric())
 }
 
 
-## Write a short comment describing this function
+## takes argument as makeCacheMatrix and either fetches the inverse of the matrix if already computed else computes the 
+## inverse of the matrix and stores it for future reference
 
 cacheSolve<-function(x, ...)
 {
